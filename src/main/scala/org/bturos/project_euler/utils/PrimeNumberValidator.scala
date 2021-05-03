@@ -2,7 +2,7 @@ package org.bturos.project_euler.utils
 
 import scala.annotation.tailrec
 
-class PrimeNumberFinder {
+class PrimeNumberValidator {
   def isPrimeNumber(number: Long): Boolean = {
     if (number % 2 == 0) false
     else testPrimeNumber(number, 1)
