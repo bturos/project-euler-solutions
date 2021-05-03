@@ -1,10 +1,10 @@
 package org.bturos.project_euler
 
-import org.bturos.project_euler.utils.PrimeNumberFinder
+import org.bturos.project_euler.utils.PrimeNumberValidator
 
 import scala.annotation.tailrec
 
-class LargestPrimeFactorSolver(primeNumberFinder: PrimeNumberFinder) {
+class LargestPrimeFactorSolver(primeNumberFinder: PrimeNumberValidator) {
   def findLargestPrimeFactorOf(number: Long): Long = {
     divideByFactor(number, 2, List())
       .filter(primeNumberFinder.isPrimeNumber)

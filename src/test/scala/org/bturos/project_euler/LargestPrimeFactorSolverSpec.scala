@@ -1,11 +1,11 @@
 package org.bturos.project_euler
 
-import org.bturos.project_euler.utils.PrimeNumberFinder
+import org.bturos.project_euler.utils.PrimeNumberValidator
 
 class LargestPrimeFactorSolverSpec extends BaseEulerProblemSolverSpec {
   it should "Find the largest prime factor of 42" in {
     // given
-    val primeNumberFinder = new PrimeNumberFinder()
+    val primeNumberFinder = new PrimeNumberValidator()
     val solver = new LargestPrimeFactorSolver(primeNumberFinder)
 
     // when
@@ -17,7 +17,7 @@ class LargestPrimeFactorSolverSpec extends BaseEulerProblemSolverSpec {
 
   it should "Find the largest prime factor of 600851475143" in {
     // given
-    val primeNumberFinder = new PrimeNumberFinder()
+    val primeNumberFinder = new PrimeNumberValidator()
     val solver = new LargestPrimeFactorSolver(primeNumberFinder)
 
     // when

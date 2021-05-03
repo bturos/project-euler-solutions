@@ -2,10 +2,10 @@ package org.bturos.project_euler.utils
 
 import org.bturos.project_euler.BaseEulerProblemSolverSpec
 
-class PrimeNumberFinderSpec extends BaseEulerProblemSolverSpec {
+class PrimeNumberValidatorSpec extends BaseEulerProblemSolverSpec {
   it should "Find prime numbers in specified range" in {
     // given
-    val finder = new PrimeNumberFinder()
+    val finder = new PrimeNumberValidator()
 
     // when
     val results: Map[Int, Boolean] = (1 to 20)
