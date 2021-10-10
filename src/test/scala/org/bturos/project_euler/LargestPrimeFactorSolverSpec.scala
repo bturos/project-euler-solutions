@@ -24,6 +24,6 @@ class LargestPrimeFactorSolverSpec extends BaseEulerProblemSolverSpec {
     val result = solver.findLargestPrimeFactorOf(600851475143L)
 
     // then
-    result shouldBe 7
+    result shouldBe 6857
   }
 }
